@@ -1,0 +1,13 @@
+/base/
+/biblioteca/
+/fontes/
+/projetos/
+/sessoes/
+/00 - Central CAM.md
+/Mapa CAM.canvas
+/.obsidian/
+/.trash/
+/_Arquivo/
+*.pdf
+*.pyc
+__pycache__/

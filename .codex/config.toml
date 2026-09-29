@@ -1,0 +1,3 @@
+[agents]
+enabled = true
+max_threads = 6
