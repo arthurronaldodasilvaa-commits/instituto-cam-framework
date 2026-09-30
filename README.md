@@ -8,6 +8,8 @@ Abra a pasta raiz no Codex para criar ou continuar treinamentos em linguagem nat
 
 O Codex carrega `AGENTS.md` automaticamente como instrucoes do projeto. Os papeis de apoio ficam em `.codex/agents/`; o usuario nao precisa escolhe-los. A skill `.agents/skills/cam-treinamento/` reforca o fluxo de criacao quando um pedido de treinamento for reconhecido. O conhecimento real vem dos arquivos locais em `base/`, `fontes/`, `projetos/`, `biblioteca/` e `sessoes/`.
 
+Para a memoria funcionar, a sessao do Codex precisa ter permissao de escrita nesta pasta. Em modo somente leitura, o Codex pode analisar os arquivos, mas nao consegue registrar roteiros ou estado; nesse caso, habilite a escrita antes de criar ou revisar um treinamento.
+
 ## Uso no Instituto CAM
 
 1. Abra `F:\CAM\Vault` no Obsidian e comece por `00 - Central CAM.md` ou `Mapa CAM.canvas`.
@@ -19,3 +21,5 @@ No computador de Robson, Arthur pode copiar o vault privado completo para uma pa
 ## Limites honestos
 
 As instrucoes orientam o Codex a persistir o trabalho, mas nao capturam chats feitos fora desta pasta ou em outros aplicativos. Confira sempre a entrega e o estado atualizado. Conteudo gerado nao e aprovado por Robson automaticamente. As fontes originais podem conter inconsistencias e exigem revisao humana.
+
+Para conferir a integridade tecnica do vault, instale a dependencia opcional `PyYAML` no Python e execute `python scripts/verificar.py` na raiz. Esse teste verifica fontes, metadados e links locais; nao valida qualidade editorial ou eficacia do treinamento.

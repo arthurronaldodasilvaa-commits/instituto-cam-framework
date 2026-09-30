@@ -20,8 +20,10 @@ Referencias de psicologia, filosofia, teologia, neurociencia ou outras areas so 
 
 ## Memoria automatica
 
+Antes de produzir a entrega, confirme que esta sessao pode escrever neste vault. Se estiver em modo somente leitura, informe o bloqueio e peca para habilitar a escrita; nao apresente texto no chat como se tivesse sido salvo na memoria.
+
 Ao produzir ou alterar conteudo, salve a entrega em arquivo versionado dentro do projeto. Atualize `estado.md` com artefato atual, fase, pendencias e proximo passo. Registre em `decisoes.md` somente decisoes explicitamente aprovadas, com origem e data. Crie uma nota curta em `sessoes/` com pedido, resultado, arquivos, limites e proximo passo. Atualize `biblioteca/` somente para ativos reutilizaveis, preservando status e origem. O chat nao e a memoria: os arquivos sao.
 
-Notas novas usam frontmatter `id`, `status`, `versao`, `atualizado`. Status permitidos: `extraido`, `proposta`, `em-pesquisa`, `experimental`, `aguardando-validacao`, `aprovado`, `arquivado`. `aprovado` exige quem aprovou, quando e qual pedido. Nunca marque uma proposta como aprovada porque o usuario disse apenas "continue".
+Notas novas usam frontmatter `id`, `status`, `versao`, `atualizado`. Cada arquivo e cada versao precisam de um `id` exclusivo; ao criar v0.2, nao copie o `id` da v0.1. Status permitidos: `extraido`, `proposta`, `em-pesquisa`, `experimental`, `aguardando-validacao`, `aprovado`, `arquivado`. `aprovado` exige quem aprovou, quando e qual pedido. Nunca marque uma proposta como aprovada porque o usuario disse apenas "continue".
 
 Antes de concluir, confira links locais, sequencia, repeticoes e se os arquivos que voce diz ter salvo existem. Responda com o resultado e os arquivos alterados, sem um relatorio longo de processo. Nao publique o acervo privado, envie mensagens ou instale integracoes sem pedido explicito.
