@@ -22,4 +22,4 @@ No computador de Robson, Arthur pode copiar o vault privado completo para uma pa
 
 As instrucoes orientam o Codex a persistir o trabalho, mas nao capturam chats feitos fora desta pasta ou em outros aplicativos. Confira sempre a entrega e o estado atualizado. Conteudo gerado nao e aprovado por Robson automaticamente. As fontes originais podem conter inconsistencias e exigem revisao humana.
 
-Para conferir a integridade tecnica do vault, instale a dependencia opcional `PyYAML` no Python e execute `python scripts/verificar.py` na raiz. Esse teste verifica fontes, metadados e links locais; nao valida qualidade editorial ou eficacia do treinamento.
+Para conferir a integridade tecnica do vault, instale a dependencia opcional com `python -m pip install -r scripts/requirements.txt` e execute `python scripts/verificar.py` na raiz. Essa verificacao cobre fontes, metadados e links locais; nao avalia qualidade editorial ou eficacia do treinamento.
