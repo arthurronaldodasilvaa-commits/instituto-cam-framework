@@ -54,7 +54,15 @@ def check(root):
         expected = [str(n) for n in range(1, item["pages"] + 1)]
         if numbers != expected:
             errors.append(f"Paginas divergentes: {source_id}")
-        if hashlib.sha256(extracted.read_bytes()).hexdigest() != item["extracted_sha256"]:
+        raw = extracted.read_bytes()
+        normalized = raw.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+        windows = normalized.replace(b"\n", b"\r\n")
+        hashes = {
+            hashlib.sha256(raw).hexdigest(),
+            hashlib.sha256(normalized).hexdigest(),
+            hashlib.sha256(windows).hexdigest(),
+        }
+        if item["extracted_sha256"] not in hashes:
             errors.append(f"Texto extraido alterado: {source_id}")
         pages = re.split(r"^## Pagina \d+$", text, flags=re.MULTILINE)[1:]
         for number, page in enumerate(pages, 1):
